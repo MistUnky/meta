@@ -11,7 +11,7 @@ main()
 			case 0: p = map[p]; break;
 			case 1: if(map[p] != MAP_SZ-1) map[p]++; break;
 			case 2: if(map[p] != 0) map[p]--; break;
-			case 3: putchar(map[p]%256); break;
+			case 3: putchar(map[p]%256); fflush(stdout); break;
 		}
 	}
 }
